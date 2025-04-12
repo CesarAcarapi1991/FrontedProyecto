@@ -1,0 +1,91 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.error-modal {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 1rem;
+}
+
+.error-modal .modal-header {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f5c6cb;
+}
+
+.error-modal .modal-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.error-modal .modal-body {
+  padding: 1.5rem;
+  color: #721c24;
+}
+
+.error-modal .modal-footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.error-modal .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.error-modal .btn-primary {
+  background-color: #dc3545;
+  color: white;
+}
+
+.error-modal .btn-primary:hover {
+  background-color: #c82333;
+}
+
+.error-modal .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.error-modal .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.error-modal .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #721c24;
+  padding: 0.2rem;
+  line-height: 1;
+}
+
+.error-modal .close-btn:hover {
+  color: #5a1a1a;
+} 
