@@ -34,7 +34,7 @@ import Register from './components/auth/Register';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <AuthProvider>
         <Navbar />
         <div className="container">
