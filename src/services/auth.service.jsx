@@ -65,6 +65,11 @@ export const authService = {
         email,
         password
       });
+    
+      // Guardar en localStorage
+      localStorage.setItem('user', response?.data.name);
+      localStorage.setItem('token', response?.data.token);
+
       return response.data;
     } catch (error) {
       throw error.response.data;

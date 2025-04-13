@@ -23,9 +23,9 @@ const Home = () => {
   return (
     <div className="dark-home">
       <div className="home-container">
-        <h1 className="home-title">Bienvenido al Panel de Administración</h1>
+        <h1 className="home-title">Bienvenido al Panel de Administración de Tareas</h1>
         <p className="home-subtitle">
-          Gestiona tu contenido de manera eficiente y segura
+          Gestiona tu tiempo y tarea de manera eficiente y segura
         </p>
         
         {!user && (
@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         )}
 
-        <div className="features">
+        {/* <div className="features">
           <div className="feature-card">
             <div className="feature-icon">🔒</div>
             <h3>Seguridad</h3>
@@ -64,7 +64,7 @@ const Home = () => {
             <h3>Control</h3>
             <p>Gestión total de tu contenido</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

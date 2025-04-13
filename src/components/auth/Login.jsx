@@ -33,7 +33,7 @@ const Login = () => {
       <div className="auth-card">
         <div className="auth-header">
           <h2>Iniciar Sesión</h2>
-          <p>Accede a tu panel de administración</p>
+          <p>Accede a tus tareas</p>
         </div>
         
         {error && (
@@ -89,12 +89,12 @@ const Login = () => {
               Regístrate aquí
             </button>
           </p>
-          <button 
+          {/* <button 
             onClick={() => navigate('/forgot-password')} 
             className="auth-link-button"
           >
             ¿Olvidaste tu contraseña?
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

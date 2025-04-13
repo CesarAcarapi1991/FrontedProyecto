@@ -357,6 +357,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { taskService } from '../services/task.service';
 import TaskCard from '../components/TaskCard';
 import TaskForm from '../components/TaskForm';
+import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -372,6 +373,7 @@ const Dashboard = () => {
   const [lastUpdated, setLastUpdated] = useState(new Date());
   const [menuOpen, setMenuOpen] = useState(false);
   const [formError, setFormError] = useState(null);
+  const navigate = useNavigate();
 
   const refreshTasks = () => {
     setLastUpdated(new Date());
@@ -390,6 +392,10 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (!storedUser) {
+      navigate('/login', { replace: true });
+    }
     loadTasks();
   }, [lastUpdated, loadTasks]);
 
