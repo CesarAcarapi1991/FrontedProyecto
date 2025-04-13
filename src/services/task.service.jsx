@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3005/api/tasks'; // Endpoint específico para tareas
+const API_URL = 'https://backendproyecto-tto5.onrender.com/api/tasks'; // Endpoint específico para tareas
 
 // Crear instancia de axios para tareas
 const taskApi = axios.create({

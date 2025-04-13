@@ -48,14 +48,14 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3005/api/auth';
+const API_URL = 'https://backendproyecto-tto5.onrender.com/api/auth';
 
-const authApi = axios.create({
-  baseURL: API_URL,
-  headers: {
-    'Content-Type': 'application/json'
-  }
-});
+// const authApi = axios.create({
+//   baseURL: API_URL,
+//   headers: {
+//     'Content-Type': 'application/json'
+//   }
+// });
 
 export const authService = {
 
